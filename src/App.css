@@ -1,0 +1,138 @@
+.weather-forcast {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search {
+    position: relative;
+}
+
+.search button.search-btn {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+}
+
+.search input#search {
+    padding: 10px 80px 10px 8px;
+}
+.weather-data-card {
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.weather-forcast-info {
+    max-width: 40%;
+    flex: 0 0 40%;
+}
+.weather-data-card .show-weather-icon {text-align: center;padding: 30px 0;}
+
+.weather-data-card .show-weather-icon i {
+    font-size: 65px;
+    line-height: 100%;
+}
+.weather-temp-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.weather-temp-info .weather-temp {
+    flex: 0 0 70%;
+}
+
+.date {
+    flex: 0 0 30%;
+}
+.weather-temp-info .weather-temp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: #000;
+    align-items: center;
+}
+
+.weather-temp-info .weather-temp span.temp {
+    flex: 0 0 70%;
+    color: #fff;
+    font-size: 45px;
+    display: block;
+    padding: 0 0px 0 10px;
+}
+
+.weather-temp-info .weather-temp .temp-type {
+    flex: 0 0 30%;
+    color: #fff;
+    padding: 0;
+}
+
+.weather-temp-info .weather-temp .temp-type span.weather-type {
+    font-size: 34px;
+    display: block;
+}
+.date {
+    background-color: #0579b2;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.weather-extra-info ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.weather-extra-info {
+    padding: 10px 10px;
+}
+.weather-extra-info ul li {
+    flex: calc(100%/4);
+    font-size: 14px;
+    position: relative;
+    padding: 0 0 0 30px;
+}
+
+.weather-extra-info ul li span {
+    display: block;
+}
+
+.weather-extra-info ul li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #0579b2;
+}
+.weather-description {
+    border-top: 1px solid #ddd;
+    padding: 8px 10px;
+}
+
+.weather-description p {
+    margin: 0;
+}
+@media(max-width: 767px){
+    .weather-forcast-info {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .weather-forcast {
+        padding: 0 15px;
+    }
+    .weather-temp-info .weather-temp,.date {
+        flex: 0 0 100%;
+    }
+    .weather-extra-info ul li {
+        flex: calc(100%/2);
+        font-size: 20px;
+    }
+}
